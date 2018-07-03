@@ -1,0 +1,20 @@
+img{
+    border:black;
+    margin:45px;
+}
+
+p{
+    color:white;
+}
+
+select{
+    padding: 20px;
+}
+
+nav{
+    color:white;
+}
+
+.row{
+    margin:20px;
+}

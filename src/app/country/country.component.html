@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light justify-content-between ">
+    <a class="navbar-brand" href="#">Choose your country</a>
+  </nav>
+
+<select (change) = "getCountryData($event.target.value)">
+  <option value=" " selected disabled>Select country</option>
+  <option *ngFor="let data of countryData" value="{{ data.name }}" >{{data.name}} / {{data.nativeName}}</option>
+</select>
+<div *ngIf = "data">
+  <img src="{{data.flag}}" height="55" width="80">                    
+  <div class="row">  <p>+{{data.callingCodes}}</p> 
+    <input type="text" placeholder="Enter the Mobile Number" ></div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 style="color:white;text-align: center">Know your loaction</h1>
+    <div class="form-group">
+      <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl" autocomplete="on">
+    </div>
+    <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" (mapClick)="show($event)">
+      <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+     
+    </agm-map>
+  </div>

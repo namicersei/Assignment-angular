@@ -1,0 +1,46 @@
+
+
+<form [formGroup]="payForm">
+    <div class="form-group">
+      <label class="center-block">Name:
+        <input class="form-control" formControlName="name">
+      </label>
+    </div>
+    <div class="form-group">
+        <label class="center-block">
+      Email:
+        <input class="form-control" formControlName="email">
+      </label>
+    </div>
+    <div class="form-group">
+      
+      <label class="center-block">Phone:
+        <input class="form-control" formControlName="phone">
+      </label>
+    </div>
+    <div class="form-group">
+      
+        <label class="center-block">Description:
+          <input class="form-control" formControlName="description">
+        </label>
+      </div>
+      <div class="form-group">
+      
+          <label class="center-block">Prefill mail:
+            <input class="form-control" formControlName="pmail">
+          </label>
+        </div>
+        <div class="form-group">
+      
+            <label class="center-block">Prefill name:
+              <input class="form-control" formControlName="pname">
+            </label>
+          </div>
+          <div class="form-group">
+      
+              <label class="center-block">Amount:
+                <input class="form-control" formControlName="amount">
+              </label>
+            </div>
+    <button (click)="onPay()">Pay</button>
+  </form>

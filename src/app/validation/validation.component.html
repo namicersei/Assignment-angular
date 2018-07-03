@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="form-group">
+  <label >EmailId:</label>
+   <input type="email" #email>
+  </div>
+  <div class="form-group">
+      <label>Phone number:</label>
+       <input type="number" #phone>
+      </div>
+
+      <button (click)="Submit(email.value,phone.value)">Submit</button>
+</div>

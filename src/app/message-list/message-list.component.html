@@ -1,0 +1,31 @@
+
+  <div clss="form-group">
+    <div  class="chatbox">
+      <div class="panel-body">
+        <div class="chat-box">
+          <div class="chats"> 
+              <div class="chat" *ngFor="let convo of conversation">
+                  <button class="btn btn-primary" style="color:white;background-color: blue;margin: 5px">
+                      {{convo.payload.val().content }}
+                  </button>
+              </div>
+          </div>
+         
+        </div>
+         
+      </div>
+     
+    </div>
+    
+    <div class="fixed-bottom row">
+      <div class="col-md-6">
+          <app-message-item></app-message-item>
+      </div>
+      <div class="col-md-6">
+          <app-message-item></app-message-item>
+      </div>
+      
+    </div>
+    
+    
+  </div>
